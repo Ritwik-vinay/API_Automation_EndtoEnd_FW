@@ -13,4 +13,25 @@ public class TestIntegrationSample {
         Assert.assertTrue(true);
 
     }
+    @Test(groups="qa", priority=2)
+    @Owner("Ritwik")
+    @Description("TC# TC2 = Step2 verify that the booking cBy ID")
+    public void testverifyBookingID(){
+        Assert.assertTrue(true);
+
+    }
+    @Test(groups="qa", priority=3)
+    @Owner("Ritwik")
+    @Description("TC# TC3 = Step3 verify Updated Booking By ID")
+    public void testupdateBookingId(){
+        Assert.assertTrue(true);
+
+    }
+    @Test(groups="qa", priority=1)
+    @Owner("Ritwik")
+    @Description("TC# TC4 = Step4 verify Delete Booking By ID")
+    public void testdeleteBookingID(){
+        Assert.assertTrue(true);
+
+    }
 }

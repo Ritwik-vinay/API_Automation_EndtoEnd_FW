@@ -1,9 +1,7 @@
 package org.rv.modules;
 
 import com.google.gson.Gson;
-import org.rv.pojos.Booking;
-import org.rv.pojos.BookingResponse;
-import org.rv.pojos.Bookingdates;
+import org.rv.pojos.*;
 
 public class PayloadManager {
     //Convert the java objects to JSON
@@ -34,4 +32,21 @@ public class PayloadManager {
         BookingResponse bookingResponse =gson.fromJson(responseString, BookingResponse.class);
         return bookingResponse;
     }
+
+    public String create_PayloadTokenasString() {
+        Token token = new Token();
+        token.setUsername("admin");
+        token.setPassword("password123");
+        Gson gson1 = new Gson();
+        String jsonStringtoken = gson.toJson(token);
+        System.out.println(jsonStringtoken);
+        return jsonStringtoken;
+    }
+
+    public TokenResponse bookingtokenResponseJava(String tokenresponseString) {
+        gson = new Gson();
+        TokenResponse tokenResponse = gson.fromJson(tokenresponseString, TokenResponse.class);
+        return tokenResponse;
+    }
+
 }

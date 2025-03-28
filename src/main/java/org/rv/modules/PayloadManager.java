@@ -2,6 +2,7 @@ package org.rv.modules;
 
 import com.google.gson.Gson;
 import org.rv.pojos.Booking;
+import org.rv.pojos.BookingResponse;
 import org.rv.pojos.Bookingdates;
 
 public class PayloadManager {
@@ -26,5 +27,11 @@ public class PayloadManager {
         String jsonStringBooking = gson.toJson(booking);
         System.out.println(jsonStringBooking);
         return jsonStringBooking;
+    }
+    //Converting the String into JAVA object
+    public BookingResponse bookingResponseJava(String responseString){
+        gson = new Gson();
+        BookingResponse bookingResponse =gson.fromJson(responseString, BookingResponse.class);
+        return bookingResponse;
     }
 }

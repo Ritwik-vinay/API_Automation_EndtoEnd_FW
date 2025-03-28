@@ -37,16 +37,16 @@ public class PayloadManager {
         Token token = new Token();
         token.setUsername("admin");
         token.setPassword("password123");
-        Gson gson1 = new Gson();
+        gson = new Gson();
         String jsonStringtoken = gson.toJson(token);
-        System.out.println(jsonStringtoken);
+        System.out.println("Payload Set to the "+ jsonStringtoken);
         return jsonStringtoken;
     }
 
-    public TokenResponse bookingtokenResponseJava(String tokenresponseString) {
+    public String bookingtokenResponseJava(String tokenresponseString) {
         gson = new Gson();
         TokenResponse tokenResponse = gson.fromJson(tokenresponseString, TokenResponse.class);
-        return tokenResponse;
+        return tokenResponse.getToken().toString();
     }
 
 }

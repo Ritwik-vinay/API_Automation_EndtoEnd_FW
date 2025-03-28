@@ -20,7 +20,8 @@ public class Test_CreateToken  extends BaseTest {
                 .when().body(payloadManager.create_PayloadTokenasString()).post();
         validatableResponse = response.then().log().all();
         validatableResponse.statusCode(200);
-        TokenResponse tokenResponse = payloadManager.bookingtokenResponseJava(response.asString());
+        String token = payloadManager.bookingtokenResponseJava(response.asString());
+
 
 
 

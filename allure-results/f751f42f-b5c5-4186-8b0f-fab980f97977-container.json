@@ -1,0 +1,1 @@
+{"uuid":"f751f42f-b5c5-4186-8b0f-fab980f97977","name":"Framework_Part2","children":["cbc805c0-c704-40c8-8205-20f1d852c915"],"befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1743185078901,"stop":1743185079637}],"afters":[],"start":1743185078867,"stop":1743185082507}

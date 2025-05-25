@@ -1,0 +1,1 @@
+{"uuid":"8ae31a3d-26cf-48ee-854c-76eaec2d078b","name":"API_Automation_EndtoEnd_FW","children":["af17ea4f-c7e3-447c-b242-59bf71be54bb"],"befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1743169126521,"stop":1743169127256}],"afters":[],"start":1743169126498,"stop":1743169127609}
